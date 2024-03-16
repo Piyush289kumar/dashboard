@@ -25,7 +25,7 @@ import { useStateContext } from "./contexts/ContextProvider";
 import LocomotiveScroll from 'locomotive-scroll';
 import "./App.css";
 
-const locomotiveScroll = new LocomotiveScroll();
+// const locomotiveScroll = new LocomotiveScroll();
 
 function App() {
   const { activeMenu } = useStateContext();
