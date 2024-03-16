@@ -111,7 +111,15 @@ function Ecommerce() {
               </div>
 
               <div className="mt-5">
-                <Sparkline />
+                <SparkLineChart
+                  currentColor="blue"
+                  id="line-sparkLine"
+                  type="Line"
+                  height="80px"
+                  width="250px"
+                  data={SparklineAreaData}
+                  color="red"
+                />
               </div>
             </div>
           </div>
