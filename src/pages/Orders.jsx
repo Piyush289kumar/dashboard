@@ -20,9 +20,15 @@ import { Header } from "../components";
 
 function Orders() {
   let grid;
-  const toolbar = ["PdfExport"];
+  const toolbar = ["PdfExport", "ExcelExport"];
   const toolbarClick = (args) => {
-    grid.pdfExport("CurrentPage");
+    // grid.pdfExport("CurrentPage");
+    if (args == 'pdf') {
+      grid.pdfExport();
+    }
+    // if (args == 'excel') {
+    //   grid.excelExport();
+    // }
   };
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
@@ -36,7 +42,7 @@ function Orders() {
         allowExcelExport
         toolbar={toolbar}
         allowPdfExport={true}
-        toolbarClick={toolbarClick}
+        toolbarClick={() => toolbarClick('pdf', 'excel')}
         ref={(g) => (grid = g)}
         allowResizing
         contextMenuItems={contextMenuItems}
