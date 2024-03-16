@@ -30,7 +30,7 @@ function Ecommerce() {
           <div className="flex justify-between items-center">
             <div>
               <p className="font-bold text-gray-400">Earnings</p>
-              <p className="font-bold text-gray-400">₹63,448.78</p>
+              <p className="text-2xl">₹63,448.78</p>
             </div>
             <button
               type="button"
@@ -64,7 +64,7 @@ function Ecommerce() {
               </button>
               <p className="mt-3">
                 <span className="text-lg font-semibold">{item.amount}</span>
-                <span className={`text-sm text-${item.pcColor} ml-2`}>
+                <span className={`text-sm ${item.pcColor} ml-2`}>
                   {item.percentage}
                 </span>
               </p>
@@ -118,9 +118,20 @@ function Ecommerce() {
                   height="80px"
                   width="250px"
                   data={SparklineAreaData}
-                  color="red"
+                  color="blue"
                 />
               </div>
+              <div className="mt-10">
+                <Button
+                  color="white"
+                  bgColor={"blue"}
+                  text={"Download Report"}
+                  borderRadius={"10px"}
+                />
+              </div>
+            </div>
+            <div>
+              <StackedChart width="320px" height="360px" />
             </div>
           </div>
         </div>
