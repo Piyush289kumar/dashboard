@@ -22,7 +22,10 @@ import {
   Line,
 } from "./pages";
 import { useStateContext } from "./contexts/ContextProvider";
+import LocomotiveScroll from 'locomotive-scroll';
 import "./App.css";
+
+const locomotiveScroll = new LocomotiveScroll();
 
 function App() {
   const { activeMenu } = useStateContext();
