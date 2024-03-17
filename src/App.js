@@ -35,8 +35,17 @@ function App() {
     isThemeMenuOpen,
     setIsThemeMenuOpen,
   } = useStateContext();
+
+  useEffect(() => {
+    if (currentThemeMode === "Dark") {
+      document.body.style.backgroundColor = "#20232A";
+    } else {
+      document.body.style.backgroundColor = "#FAFBFB";
+    }
+  }, [currentThemeMode]);
+
   return (
-    <div>
+    <div className={currentThemeMode === "Dark" ? "dark" : ""}>
       <BrowserRouter>
         <div className="flex relative dark:bg-main-dark-bg">
           <div className="fixed right-4 bottom-4" style={{ zIndex: "1000" }}>

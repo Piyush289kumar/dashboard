@@ -28,6 +28,7 @@ function StackedChart({ width, height }) {
       chartArea={{ border: { width: 0 } }}
       tooltip={{ enable: true }}
       background={"#fff"}
+      className="rounded-xl"
       legendSettings={{ background: "white" }}
     >
       <Inject services={{ StackingColumnSeries, Category, Legend, Tooltip }} />

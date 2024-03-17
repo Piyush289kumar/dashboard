@@ -505,11 +505,11 @@ export const links = [
         icon: <AiOutlineCalendar />,
       },
       {
-        name: 'Task Progress Board',
+        name: 'kanban',
         icon: <BsKanban />,
       },
       {
-        name: 'Blog Editor',
+        name: 'Editor',
         icon: <FiEdit />,
       },
       {
