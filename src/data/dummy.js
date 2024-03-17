@@ -5750,3 +5750,31 @@ export const PyramidData = [
   { x: "Fruits", y: 520, text: "520 cal" },
   { x: "Bread, Rice, Pasta", y: 930, text: "930 cal" },
 ];
+
+export const notificationData = [
+  {
+    avatar: avatar2,
+    notificationText: "Silvi Joined the Team!",
+    notificationSubText: "Congratulate him",
+    notificationTime: "09:08 AM",
+  },
+  {
+    avatar: avatar,
+    notificationText: "New message received",
+    notificationSubText: "Salma sent you new message",
+    notificationTime: "11:56 AM",
+  },
+  {
+    avatar: avatar3,
+    notificationText: "New Payment received",
+    notificationSubText: "Check your earnings",
+    notificationTime: "04:08 PM",
+  },
+  {
+    avatar: avatar4,
+    notificationText: "Jolly completed tasks",
+    notificationSubText: "Assign her new tasks",
+    notificationTime: "08:25 AM",
+  },
+];
+

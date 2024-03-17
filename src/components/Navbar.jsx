@@ -65,6 +65,7 @@ function Navbar() {
         color={currentColorMode}
         icon={<AiOutlineMenu />}
       />
+
       <div className="flex">
         <NavButton
           title="Cart"
@@ -103,13 +104,14 @@ function Navbar() {
               </span>
             </p>
             <MdKeyboardArrowDown className="text-gray-400 text-14" />
+            
           </div>
         </TooltipComponent>
 
-        {/* {isClicked.cart && <Cart />}
-        {isClicked.chat && <Chat />}
-        {isClicked.notification && <Notification />}
-        {isClicked.userProfile && <UserProfile />} */}
+        {isClicked.cart && <Cart />}
+        
+        
+        {isClicked.userProfile && <UserProfile />}
       </div>
     </div>
   );
