@@ -35,6 +35,7 @@ function Navbar() {
     handleClick,
     screenSize,
     setScreenSize,
+    currentColorMode,
   } = useStateContext();
 
   useEffect(() => {
@@ -61,27 +62,27 @@ function Navbar() {
       <NavButton
         title="Menu"
         customFunc={handleActiveMenu}
-        color="blue"
+        color={currentColorMode}
         icon={<AiOutlineMenu />}
       />
       <div className="flex">
         <NavButton
           title="Cart"
           customFunc={() => handleClick("cart")}
-          color="blue"
+          color={currentColorMode}
           icon={<FiShoppingCart />}
         />
         <NavButton
           title="Chat"
           customFunc={() => handleClick("chat")}
-          color="blue"
+          color={currentColorMode}
           dotColor="#03C9D7"
           icon={<BsChatLeft />}
         />
         <NavButton
           title="Notification"
           customFunc={() => handleClick("notification")}
-          color="blue"
+          color={currentColorMode}
           dotColor="rgb(254, 201, 15)"
           icon={<RiNotification3Line />}
         />

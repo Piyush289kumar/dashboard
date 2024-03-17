@@ -22,13 +22,19 @@ import {
   Line,
 } from "./pages";
 import { useStateContext } from "./contexts/ContextProvider";
-import LocomotiveScroll from 'locomotive-scroll';
+import LocomotiveScroll from "locomotive-scroll";
 import "./App.css";
 
 // const locomotiveScroll = new LocomotiveScroll();
 
 function App() {
-  const { activeMenu } = useStateContext();
+  const {
+    activeMenu,
+    currentThemeMode,
+    currentColorMode,
+    isThemeMenuOpen,
+    setIsThemeMenuOpen,
+  } = useStateContext();
   return (
     <div>
       <BrowserRouter>
@@ -38,7 +44,8 @@ function App() {
               <button
                 type="button"
                 className="text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray rounded-full text-white"
-                style={{ background: "blue" }}
+                style={{ background: currentColorMode }}
+                onClick={() => setIsThemeMenuOpen(true)}
               >
                 <FiSettings />
               </button>
@@ -63,6 +70,7 @@ function App() {
             </div>
 
             <div>
+              {isThemeMenuOpen && <ThemeSettings />}
               <Routes>
                 {/* Dashboard */}
                 <Route path="/" element={<Ecommerce />} />

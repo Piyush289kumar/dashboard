@@ -23,6 +23,7 @@ import { useStateContext } from "../contexts/ContextProvider";
 import { Sparkline } from "@syncfusion/ej2-react-charts";
 
 function Ecommerce() {
+  const { currentColorMode } = useStateContext();
   return (
     <div className="mt-24">
       <div className="flex flex-wrap lg:flex-nowrap justify-center">
@@ -34,7 +35,7 @@ function Ecommerce() {
             </div>
             <button
               type="button"
-              style={{ backgroundColor: "blue" }}
+              style={{ backgroundColor: { currentColorMode } }}
               className="text-2xl opacity-0.9 text-white hover:drop-shadow-xl rounded-full p-4"
             >
               <BsCurrencyDollar />
@@ -43,7 +44,7 @@ function Ecommerce() {
           <div className="mt-6">
             <Button
               color="white"
-              bgColor="blue"
+              bgColor={currentColorMode}
               text="Download"
               borderRadius="10px"
             />
@@ -112,19 +113,19 @@ function Ecommerce() {
 
               <div className="mt-5">
                 <SparkLineChart
-                  currentColor="blue"
+                  currentColor={currentColorMode}
                   id="line-sparkLine"
                   type="Line"
                   height="80px"
                   width="250px"
                   data={SparklineAreaData}
-                  color="blue"
+                  color={currentColorMode}
                 />
               </div>
               <div className="mt-10">
                 <Button
                   color="white"
-                  bgColor={"blue"}
+                  bgColor={{ currentColorMode }}
                   text={"Download Report"}
                   borderRadius={"10px"}
                 />
