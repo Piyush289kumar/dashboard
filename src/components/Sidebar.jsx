@@ -23,7 +23,8 @@ function Sidebar() {
         <Link
           to="/"
           onClick={handleCloseSideBar}
-          className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
+          style={{ background: currentColorMode }}
+          className="w-full items-center gap-3 px-5 py-2 rounded-l-xl mt-4 flex text-xl font-extrabold tracking-tight text-white "
         >
           <SiShopware /> <span>C-Panel</span>
         </Link>
