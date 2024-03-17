@@ -18,6 +18,7 @@ import {
 import { useStateContext } from "../../contexts/ContextProvider";
 
 function StackedChart({ width, height }) {
+  const { currentThemeMode } = useStateContext();
   return (
     <ChartComponent
       id="charts"
@@ -27,9 +28,9 @@ function StackedChart({ width, height }) {
       height={height}
       chartArea={{ border: { width: 0 } }}
       tooltip={{ enable: true }}
-      background={"#fff"}
-      className="rounded-xl"
-      legendSettings={{ background: "white" }}
+      className="rounded- xl"
+      background={currentThemeMode === "Dark" ? "#033373E" : "#FAFBFB"}
+      legendSettings={{ background: "#FAFBFB" }}
     >
       <Inject services={{ StackingColumnSeries, Category, Legend, Tooltip }} />
       <SeriesCollectionDirective>

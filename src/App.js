@@ -21,6 +21,7 @@ import {
   Editor,
   Line,
 } from "./pages";
+
 import { useStateContext } from "./contexts/ContextProvider";
 import LocomotiveScroll from "locomotive-scroll";
 import "./App.css";
