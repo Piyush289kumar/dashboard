@@ -13,7 +13,7 @@ export const ContextProvider = ({ children }) => {
   const [activeMenu, setActiveMenu] = useState(true);
   const [isClicked, setIsClicked] = useState(initializationState);
   const [screenSize, setScreenSize] = useState(null);
-  const [currentThemeMode, setCurrentThemeMode] = useState("Dark");
+  const [currentThemeMode, setCurrentThemeMode] = useState("Light");
   const [currentColorMode, setCurrentColorMode] = useState("#7352FF");
   const [isThemeMenuOpen, setIsThemeMenuOpen] = useState(false);
 
