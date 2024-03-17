@@ -8,7 +8,7 @@ function Chat() {
   const { setIsClicked, currentColorMode } = useStateContext();
 
   return (
-    <div>
+    <div style={{ zIndex: 9999999 }}>
       <div className="fixed top-0 right-0 w-full h-screen bg-half-transparent">
         <div className="w-96 bg-slate-100 dark:bg-zinc-700 rounded-xl fixed top-14 right-56 p-8">
           <div className="flex justify-between items-center">

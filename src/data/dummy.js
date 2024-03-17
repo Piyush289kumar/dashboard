@@ -5777,4 +5777,3 @@ export const notificationData = [
     notificationTime: "08:25 AM",
   },
 ];
-
