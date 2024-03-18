@@ -93,7 +93,7 @@ function Navbar() {
             onClick={() => handleClick("userProfile")}
           >
             <img
-              src={avatar}
+              src={"https://avatars.githubusercontent.com/u/94155141?v=4"}
               alt="user-profile"
               className="rounded-full w-8 h-8"
             />
@@ -104,13 +104,11 @@ function Navbar() {
               </span>
             </p>
             <MdKeyboardArrowDown className="text-gray-400 text-14" />
-            
           </div>
         </TooltipComponent>
 
         {isClicked.cart && <Cart />}
-        
-        
+
         {isClicked.userProfile && <UserProfile />}
       </div>
     </div>
