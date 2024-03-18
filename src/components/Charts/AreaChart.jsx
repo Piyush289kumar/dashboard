@@ -29,8 +29,8 @@ function AreaChart() {
       primaryYAxis={areaPrimaryYAxis}
       chartArea={{ border: { width: 0 } }}
       tooltip={{ enable: true }}
-      background={currentThemeMode === "Dark" ? "#033373E" : "#FAFBFB"}
-      legendSettings={{ background: "#FAFBFB" }}
+      background={currentThemeMode === "Dark" ? "#33373E" : "#FAFBFB"}
+      legendSettings={{ visible: true, background: "#FAFBFB" }}
       className="cursor-pointer"
     >
       <Inject services={[SplineAreaSeries, DateTime, Legend, Tooltip]} />
