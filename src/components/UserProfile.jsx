@@ -50,7 +50,7 @@ function UserProfile() {
                 key={idx}
                 className="border-b-1 border-color dark:border-zinc-500"
               >
-                <div className="flex gap-5 items-center my-1 cursor-pointer hover:bg-zinc-400 dark:hover:bg-zinc-800  rounded-md px-2 py-3">
+                <div className="flex gap-5 items-center my-1 cursor-pointer hover:bg-zinc-200 dark:hover:bg-zinc-800  rounded-md px-2 py-3">
                   <p
                     style={{ color: item.iconColor, background: item.iconBg }}
                     className="p-3 rounded-full"

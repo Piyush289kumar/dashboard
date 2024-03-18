@@ -67,12 +67,12 @@ function Navbar() {
       />
 
       <div className="flex">
-        <NavButton
+        {/* <NavButton
           title="Cart"
           customFunc={() => handleClick("cart")}
           color={currentColorMode}
           icon={<FiShoppingCart />}
-        />
+        /> */}
         <NavButton
           title="Chat"
           customFunc={() => handleClick("chat")}
@@ -107,7 +107,7 @@ function Navbar() {
           </div>
         </TooltipComponent>
 
-        {isClicked.cart && <Cart />}
+        {/* {isClicked.cart && <Cart />} */}
 
         {isClicked.userProfile && <UserProfile />}
       </div>
